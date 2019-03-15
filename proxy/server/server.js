@@ -29,7 +29,7 @@ const handleGetReq = (url) => {
   let cacheId = 'get' + url;
   return helpers.getCachedDataAsync(cacheId, cacheId).then((data) => {
     if (data.reply) {
-      console.log('using cache');
+      console.log(`using cache for ${cacheId}`);
       return data.reply;
     } else {
       return new Promise ((resolve, reject) => {
