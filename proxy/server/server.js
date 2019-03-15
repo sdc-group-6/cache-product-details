@@ -17,6 +17,10 @@ app.use(cors({
   'origin': true,
 }));
 
+app.get('/loaderio-99c265e48b6d28302ba5702a64c1f0c5.txt', (req, res) => {
+  res.sendFile(path.resolve('../public/loaderio-99c265e48b6d28302ba5702a64c1f0c5.txt'));
+});
+
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
