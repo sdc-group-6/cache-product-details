@@ -29,9 +29,10 @@ const handleGetReq = (url) => {
   let cacheId = 'get' + url;
   return helpers.getCachedDataAsync(cacheId, cacheId).then((data) => {
     if (data.reply) {
-      console.log(`using cache for ${cacheId}`);
+      console.log(`using cache for ${data.passThrough}`);
       return data.reply;
     } else {
+      console.log(`MONGO: ${data.passThrough}`);
       return new Promise ((resolve, reject) => {
         request(`http://productDetailsLoadBalancer-2032199182.us-east-1.elb.amazonaws.com${url}`, (error, response, body) => {
           if (error) {
