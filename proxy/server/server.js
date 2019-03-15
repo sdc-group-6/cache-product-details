@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 app.get('/loaderio-99c265e48b6d28302ba5702a64c1f0c5.txt', (req, res) => {
-  res.sendFile(path.resolve('../public/loaderio-99c265e48b6d28302ba5702a64c1f0c5.txt'));
+  res.sendFile(path.resolve('./public/loaderio-99c265e48b6d28302ba5702a64c1f0c5.txt'));
 });
 
 app.use(function(req, res, next) {
