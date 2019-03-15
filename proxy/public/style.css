@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'adineue PRO Cyr Light Web';
+    src: url('fonts/adineuePRO/adineuePROCyr-LightWeb.eot');
+    src: url('fonts/adineuePRO/adineuePROCyr-LightWeb.eot?#iefix') format('embedded-opentype'),
+        url('fonts/adineuePRO/adineuePROCyr-LightWeb.woff') format('woff'),
+        url('fonts/adineuePRO/adineuePROCyr-LightWeb.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adineue PRO Cyr Bold Web';
+    src: url('fonts/adineuePRO/adineuePROCyr-BoldWeb.eot');
+    src: url('fonts/adineuePRO/adineuePROCyr-BoldWeb.eot?#iefix') format('embedded-opentype'),
+        url('fonts/adineuePRO/adineuePROCyr-BoldWeb.woff') format('woff'),
+        url('fonts/adineuePRO/adineuePROCyr-BoldWeb.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'adihaus';
+    src: url('fonts/AdihausDIN.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3 {
+  font-family: 'adineue PRO Cyr Bold Web';
+}
+
+h1 {
+  font-family: 'adineue PRO Cyr Bold Web';
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+#view {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+#product-detail {
+  margin-top: -270px;
+  overflow: visible;
+}
