@@ -1,7 +1,6 @@
 const express = require('express');
 const request = require('request');
 const path = require('path');
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 // const proxy = require('http-proxy-middleware');
@@ -31,6 +30,7 @@ const handleGetReq = (url) => {
   let cacheId = 'get' + url;
   return helpers.getCachedDataAsync(cacheId, cacheId).then((data) => {
     if (data.reply) {
+      console.log('using cache');
       return data.reply;
     } else {
       return new Promise ((resolve, reject) => {

@@ -10,3 +10,5 @@ frontCache.on('error', function (err) {
 });
 
 module.exports = frontCache;
+
+// if I need to disable transparent huge pages again, run this in cli: sudo sh -c 'echo never > /sys/kernel/mm/transparent_hugepage/enabled'
