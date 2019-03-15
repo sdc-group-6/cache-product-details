@@ -7,7 +7,7 @@ const cors = require('cors');
 // const proxy = require('http-proxy-middleware');
 const app = express();
 const helpers = require('./helpers');
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8000;
 
 app.use(morgan('dev'));
 app.use(bodyParser.json());
