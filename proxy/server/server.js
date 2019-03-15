@@ -8,7 +8,6 @@ const app = express();
 const helpers = require('./helpers');
 const port = process.env.PORT || 8000;
 
-app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
